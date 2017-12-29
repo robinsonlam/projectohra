@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500|Rubik:300,400,700');
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $dark-shade;
+  font-family: 'Rubik', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 35px auto 20px;
+}
+
+p {
+  margin: 10px auto;
+}
+
+a {
+  color: $main-brand;
+  text-decoration: none;
+}
+
+body {
+  color: $light-shade;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+  line-height: 25px;
+}
