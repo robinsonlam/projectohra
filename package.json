@@ -1,0 +1,27 @@
+{
+  "name": "projectohra.com",
+  "version": "1.0.0",
+  "description": "Project Ohra. Portfolio website for the new consultancy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinsonlam/projectohra.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "html",
+    "css",
+    "javascript",
+    "webpack"
+  ],
+  "author": "Robinson Lam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robinsonlam/projectohra/issues"
+  },
+  "homepage": "https://github.com/robinsonlam/projectohra#readme"
+}
