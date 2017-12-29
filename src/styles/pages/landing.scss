@@ -1,5 +1,5 @@
 .landingPage {
-  background: $main-brand;
+  background: $color-main;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -11,14 +11,14 @@
 }
 
 .landingCard {
-  background: $light-shade;
+  background: $color-light;
   padding: 60px 140px;
 
-  box-shadow: 15px 15px 0px -10px $dark-shade;
+  box-shadow: 15px 15px 0px -10px $color-dark;
 }
 
 .landingHeading {
-  color: $main-brand;
+  color: $color-main;
   font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
   font-size: 72px;
   font-weight: 500;
@@ -35,7 +35,7 @@
     line-height: 1.2em;
   }
 
-  border-bottom: 7px solid $main-brand;
+  border-bottom: 7px solid $color-main;
 }
 
 .landingNavigation {
@@ -45,12 +45,12 @@
   li {
     display: inline-block;
     a {
-      color: $main-brand;
+      color: $color-main;
       padding: 20px;
 
       &:hover {
         transition: all 0.167s ease-in-out;
-        color: $dark-shade;
+        color: $color-dark;
         padding-bottom: 10px;
       }
     }
