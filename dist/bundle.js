@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e8b97db9dc3bb566241f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "230ef945a3f03311d98c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -9839,16 +9839,22 @@ function isUndefined(arg) {
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(process) {// HTML
-if (process.env.NODE_ENV !== 'production') {
-  __webpack_require__(27)
-}
-
-// CSS
-__webpack_require__(28);
+/* WEBPACK VAR INJECTION */(function(process) {// CSS
+__webpack_require__(27);
 
 // JavaScript
-window.$ = __webpack_require__(29);
+window.$ = __webpack_require__(28);
+
+// Effects
+__webpack_require__(29);
+
+// HTML
+$(document).ready(() => {
+  if (process.env.NODE_ENV !== 'production') {
+    __webpack_require__(30)
+    __webpack_require__(31)
+  }
+});
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
@@ -10046,16 +10052,10 @@ process.umask = function() { return 0; };
 /* 27 */
 /***/ (function(module, exports) {
 
-module.exports = "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n\n    <title>Project Ohra. | Landing</title>\n    <meta name=\"description\" content=\"Description\">\n    <meta name=\"author\" content=\"Project Ohra\">\n  </head>\n\n  <body>\n    <div class=\"landingPage\">\n      <h1>Project Ohra. | Website Template</h1>\n      <p><a href=\"./about.html\">About Us</a></p>\n    </div>\n  </body>\n</html>\n</!doctype>\n"
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -20313,6 +20313,40 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+$(document).ready(() => {
+  $('body').css('display', 'none');
+  $('body').fadeIn(300);
+  const nextPage = this.href;
+
+  $('a').click((event) => {
+    event.preventDefault();
+    newLocation = event.target.href;
+
+    $('body').fadeOut(200, newPage);
+  }).bind(this);
+
+  const newPage = () => {
+    window.location = newLocation;
+  };
+});
+
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n\n    <title>Project Ohra</title>\n    <meta name=\"description\" content=\"Description\">\n    <meta name=\"author\" content=\"Project Ohra\">\n  </head>\n\n  <body>\n    <div class=\"landingPage\">\n      <div class=\"landingCard\">\n        <h1 class=\"landingHeading\"><span class=\"headingHat\">Project</span> Ohra</h1>\n        <ul class=\"landingNavigation\">\n          <li><p><a href=\"./about.html\">About</a></p></li>\n          <li><p><a href=\"./portfolio.html\">Portfolio</a></p></li>\n          <li><p><a href=\"./contact.html\">Contact</a></p></li>\n        </ul>\n      </div>\n    </div>\n  </body>\n</html>\n</!doctype>\n"
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+module.exports = "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n\n    <title>Project Ohra | About</title>\n    <meta name=\"description\" content=\"Description\">\n    <meta name=\"author\" content=\"Project Ohra\">\n  </head>\n\n  <body>\n    <div class=\"aboutPage page\">\n      <p>About Page</p>\n      <p><a href='./index.html'>Home</a></p>\n    </div>\n  </body>\n</html>\n</!doctype>\n"
 
 /***/ })
 /******/ ]);

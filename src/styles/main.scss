@@ -4,12 +4,7 @@
 // Globals & Variables
 @import 'globals/colours';
 @import 'globals/fonts';
+@import 'globals/globals';
 
 // Pages
 @import 'pages/landing';
-
-// Global
-body {
-  height: 100%;
-  width: 100%;
-}

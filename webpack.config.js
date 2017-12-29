@@ -60,7 +60,7 @@ module.exports = {
   plugins: [
     extractSass,
     new webpack.HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({ template: __dirname + '/src/index.html' }),
-    new HtmlWebpackPlugin({ filename: 'about.html' , template: __dirname + '/src/about.html' }),
+    new HtmlWebpackPlugin({ template: __dirname + '/src/index.html', inject: 'head' }),
+    new HtmlWebpackPlugin({ filename: 'about.html' , template: __dirname + '/src/about.html', inject: 'head' }),
   ]
 }
