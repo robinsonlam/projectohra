@@ -1,4 +1,15 @@
 // Base
 @import 'base/reset';
 
-// Landing
+// Globals & Variables
+@import 'globals/colours';
+@import 'globals/fonts';
+
+// Pages
+@import 'pages/landing';
+
+// Global
+body {
+  height: 100%;
+  width: 100%;
+}
